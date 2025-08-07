@@ -82,26 +82,22 @@ function initFAQ() {
         const question = item.querySelector('.faq-question');
         const answer = item.querySelector('.faq-answer');
         
-        if (question && answer) {
-            question.addEventListener('click', () => {
-                const isActive = item.classList.contains('active');
-                
-                // Close all FAQ items
-                faqItems.forEach(otherItem => {
-                    otherItem.classList.remove('active');
-                    const otherAnswer = otherItem.querySelector('.faq-answer');
-                    if (otherAnswer) {
-                        otherAnswer.style.maxHeight = '0px';
-                    }
-                });
-                
-                // Toggle current item
-                if (!isActive) {
-                    item.classList.add('active');
-                    answer.style.maxHeight = answer.scrollHeight + 'px';
-                }
+        question.addEventListener('click', () => {
+            const isActive = item.classList.contains('active');
+            
+            // Close all FAQ items
+            faqItems.forEach(otherItem => {
+                otherItem.classList.remove('active');
+                const otherAnswer = otherItem.querySelector('.faq-answer');
+                otherAnswer.style.maxHeight = '0px';
             });
-        }
+            
+            // Toggle current item
+            if (!isActive) {
+                item.classList.add('active');
+                answer.style.maxHeight = answer.scrollHeight + 'px';
+            }
+        });
     });
 }
 
