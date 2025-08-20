@@ -1,0 +1,61 @@
+# Steam Marketing Dashboard Configuration
+
+# Scheduling Configuration
+schedule:
+  daily_collection_time: "02:00"  # 2:00 AM
+  weekly_collection_day: "sunday"
+  weekly_collection_time: "03:00"  # 3:00 AM Sunday
+  customer_config_check_interval: 300  # 5 minutes in seconds
+
+# API Rate Limits (requests per minute)
+rate_limits:
+  twitter: 75
+  youtube: 10000
+  steam: 100
+  notion: 3
+
+# Retry Configuration
+retry:
+  max_attempts: 3
+  backoff_factor: 2
+  max_delay: 300
+
+# Data Collection Settings
+data_collection:
+  twitter:
+    fetch_tweets_hours: 24
+    include_retweets: false
+    include_replies: false
+  youtube:
+    fetch_videos_hours: 24
+    include_shorts: true
+  steam:
+    track_wishlists: true
+    track_utm_campaigns: true
+
+# Notion Page Structure
+notion:
+  template_pages:
+    setup_page: "Account Setup & Connections"
+    dashboard_page: "Marketing Dashboard"
+    performance_db: "Daily Performance"
+    content_db: "Content Database"
+    events_db: "Events & Press"
+    
+  connection_databases:
+    twitter: "Twitter Connection"
+    youtube: "YouTube Connection"
+    steam: "Steam Connection"
+
+# Logging Configuration
+logging:
+  level: INFO
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  max_file_size: 10485760  # 10MB
+  backup_count: 5
+
+# Health Check Settings
+health_check:
+  enabled: true
+  port: 8080
+  endpoint: "/health"
