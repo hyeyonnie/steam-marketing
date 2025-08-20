@@ -1,0 +1,11 @@
+# Core libraries
+python-dotenv
+schedule
+requests
+
+# API Clients
+notion-client
+tweepy
+google-api-python-client
+google-auth-httplib2
+google-auth-oauthlib
