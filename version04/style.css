@@ -477,46 +477,6 @@ section {
   background: var(--color-white);
 }
 
-/* Testimonials */
-.testimonials {
-  background: var(--color-white);
-}
-
-.testimonial-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: var(--spacing-xl);
-  margin-top: var(--spacing-xl);
-}
-
-.testimonial-card {
-  background: var(--color-light);
-  padding: var(--spacing-xl);
-  border-radius: var(--border-radius-2xl);
-  border: 1px solid var(--color-border);
-  transition: var(--transition-normal);
-  box-shadow: var(--shadow-sm);
-}
-
-.testimonial-card:hover {
-  transform: translateY(-5px);
-  box-shadow: var(--shadow-lg);
-  border-color: var(--color-highlight-green);
-}
-
-.testimonial-text {
-  font-size: var(--font-size-lg);
-  color: var(--color-medium-dark);
-  line-height: 1.7;
-  margin-bottom: var(--spacing-md);
-}
-
-.testimonial-author {
-  font-weight: 600;
-  color: var(--color-dark);
-  text-align: right;
-}
-
 .services-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -655,6 +615,14 @@ section {
   color: var(--color-medium-dark);
   display: flex;
   align-items: flex-start;
+  line-height: 1.6;
+}
+
+.pricing-note {
+  text-align: center;
+  color: var(--color-medium-light);
+  font-size: var(--font-size-sm);
+  margin-top: var(--spacing-xl);
   line-height: 1.6;
 }
 
@@ -917,16 +885,6 @@ section {
   background: var(--color-white);
 }
 
-.stats-group-title {
-  font-size: var(--font-size-sm);
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  color: var(--color-medium-light);
-  text-align: center;
-  margin: var(--spacing-xl) 0 var(--spacing-lg);
-}
-
 .stats-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -1080,90 +1038,6 @@ section {
 }
 
 /* ============================================
-   Global PR Network
-   ============================================ */
-.pr-network {
-  background: var(--color-white);
-}
-
-.pr-stats {
-  display: flex;
-  justify-content: center;
-  gap: var(--spacing-3xl);
-  flex-wrap: wrap;
-  margin-top: var(--spacing-xl);
-}
-
-.pr-stat {
-  text-align: center;
-}
-
-.pr-stat-value {
-  display: block;
-  font-size: var(--font-size-5xl);
-  font-weight: 700;
-  background: linear-gradient(45deg, var(--color-highlight-purple), var(--color-highlight-green));
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  line-height: 1;
-}
-
-.pr-stat-label {
-  display: block;
-  color: var(--color-medium-dark);
-  margin-top: var(--spacing-xs);
-}
-
-.pr-outlets-label,
-.pr-regions-label {
-  text-align: center;
-  color: var(--color-medium-light);
-  font-size: var(--font-size-sm);
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  margin-top: var(--spacing-2xl);
-  margin-bottom: var(--spacing-md);
-}
-
-.pr-badges {
-  display: flex;
-  justify-content: center;
-  gap: var(--spacing-md);
-  flex-wrap: wrap;
-}
-
-.pr-badge {
-  background: var(--color-light);
-  border: 1px solid var(--color-border);
-  border-radius: var(--border-radius-xl);
-  padding: var(--spacing-sm) var(--spacing-lg);
-  font-weight: 600;
-  color: var(--color-dark);
-  transition: var(--transition-fast);
-}
-
-.pr-badge:hover {
-  border-color: var(--color-highlight-purple);
-  color: var(--color-highlight-purple);
-}
-
-.pr-regions {
-  display: flex;
-  justify-content: center;
-  gap: var(--spacing-sm);
-  flex-wrap: wrap;
-}
-
-.pr-region {
-  background: rgba(102, 0, 255, 0.05);
-  border-radius: var(--border-radius-md);
-  padding: var(--spacing-xs) var(--spacing-md);
-  font-size: var(--font-size-sm);
-  color: var(--color-medium-dark);
-}
-
-/* ============================================
    Why Choose Us - 3 column
    ============================================ */
 .features-grid-3 {
@@ -1270,10 +1144,6 @@ section {
 @media (max-width: 768px) {
   .lang-toggle {
     margin-top: var(--spacing-sm);
-  }
-
-  .pr-stats {
-    gap: var(--spacing-xl);
   }
 }
 
