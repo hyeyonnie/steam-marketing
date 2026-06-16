@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Steam Marketing Services - Save Your 100 Hours of Marketing</title>
+    <title>HypePotions — Save Your 100 Hours of Steam Marketing</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -18,14 +18,14 @@
                     <h3>HypePotions</h3>
                 </div>
                 <div class="nav-menu">
-                    <a href="#why-choose-us" class="nav-link">Benefits</a>
-                    <a href="#what-we-do" class="nav-link">Services</a>
-                    <a href="#pricing" class="nav-link">Pricing</a>
+                    <a href="#stats" class="nav-link" data-i18n="nav.proof">Proof</a>
+                    <a href="#what-we-do" class="nav-link" data-i18n="nav.services">Services</a>
+                    <a href="#why-choose-us" class="nav-link" data-i18n="nav.benefits">Benefits</a>
+                    <a href="#pricing" class="nav-link" data-i18n="nav.pricing">Pricing</a>
                     <a href="https://calendly.com/h-kwon/steam-marketing-pro">
-                        <button class="btn btn--primary cta-btn">Book a Call</button>
+                        <button class="btn btn--primary cta-btn" data-i18n="nav.bookCall">Book a Call</button>
                     </a>
-
-                    
+                    <button class="lang-toggle" id="langToggle" aria-label="Toggle language">KO</button>
                 </div>
                 <div class="nav-toggle">
                     <span></span>
@@ -41,12 +41,12 @@
         <div class="hero-background"></div>
         <div class="container">
             <div class="hero-content">
-                <h1 class="hero-title">Save Your 100 Hours of Marketing</h1>
-                <p class="hero-subtitle">Focus on what you love — game development. We handle the marketing.</p>
-                <p class="hero-tagline">Pause or cancel anytime.</p>
+                <h1 class="hero-title" data-i18n="hero.title">Save Your 100 Hours of Marketing</h1>
+                <p class="hero-subtitle" data-i18n="hero.subtitle">Focus on what you love — game development. We handle the marketing.</p>
+                <p class="hero-tagline" data-i18n="hero.tagline">Fixed-term contracts — you know the scope, the timeline, and exactly what you get.</p>
                 <div class="hero-cta">
-                    <a href="#pricing" class="btn btn--primary btn--lg cta-btn" role="button">See Pricing</a>
-                    <a href="https://calendly.com/h-kwon/steam-marketing-pro" class="btn btn--outline btn--lg cta-btn" role="button">Book a Call</a>
+                    <a href="#pricing" class="btn btn--primary btn--lg cta-btn" role="button" data-i18n="hero.seePricing">See Pricing</a>
+                    <a href="https://calendly.com/h-kwon/steam-marketing-pro" class="btn btn--outline btn--lg cta-btn" role="button" data-i18n="hero.bookCall">Book a Call</a>
                 </div>
             </div>
         </div>
@@ -58,7 +58,7 @@
     <!-- Customer Logos -->
     <section class="customer-logos">
         <div class="container">
-            <p class="logos-text">Trusted by indie developers worldwide</p>
+            <p class="logos-text" data-i18n="logos.text">Trusted by indie developers worldwide</p>
             <div class="logos-scroll">
                  <div class="logo-item">
                     <img src="images/onw studio.png" alt="OnwStudio Logo">
@@ -82,69 +82,53 @@
         </div>
     </section>
 
+    <!-- Proof / Key Stats -->
+    <section class="stats" id="stats">
+        <div class="container">
+            <h2 class="section-title" data-i18n="stats.title">Proof in Numbers</h2>
+            <p class="section-subtitle" data-i18n="stats.subtitle">Five years of Steam marketing, measured in results — not promises.</p>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">20+</div>
+                    <div class="stat-label" data-i18n="stats.titlesPartnered">Titles Partnered</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">15+</div>
+                    <div class="stat-label" data-i18n="stats.globalMarkets">Countries Reached</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">▲434<span>/mo</span></div>
+                    <div class="stat-label" data-i18n="stats.avgWishlist">Avg. Wishlist Growth</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-i18n="stats.yearsValue">5+</div>
+                    <div class="stat-label" data-i18n="stats.yearsExp">Years of Steam Marketing</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- How It Works -->
     <section class="how-it-works">
         <div class="container">
-            <h2 class="section-title">How it works</h2>
-            <p class="section-subtitle">Steam marketing, simplified. One flat monthly fee. No surprises.</p>
+            <h2 class="section-title" data-i18n="how.title">How it works</h2>
+            <p class="section-subtitle" data-i18n="how.subtitle">Steam marketing, simplified. One flat monthly fee. No surprises.</p>
             <div class="steps-grid">
                 <div class="step-card" data-step="1">
                     <div class="step-number">1</div>
-                    <h3 class="step-title">Subscribe & Share</h3>
-                    <p class="step-description">Subscribe and get your own Notion page. Share your game details, key milestones, and marketing needs — all in one place.</p>
+                    <h3 class="step-title" data-i18n="how.step1Title">Subscribe & Share</h3>
+                    <p class="step-description" data-i18n="how.step1Desc">Subscribe and get your own Notion page. Share your game details, key milestones, and marketing needs — all in one place.</p>
                 </div>
                 <div class="step-card" data-step="2">
                     <div class="step-number">2</div>
-                    <h3 class="step-title">We Get to Work</h3>
-                    <p class="step-description">We'll build your marketing roadmap: target audience, press, influencer outreach — you can track every step in real-time.</p>
+                    <h3 class="step-title" data-i18n="how.step2Title">We Get to Work</h3>
+                    <p class="step-description" data-i18n="how.step2Desc">We'll build your marketing roadmap: target audience, press, influencer outreach — you can track every step in real-time.</p>
                 </div>
                 <div class="step-card" data-step="3">
                     <div class="step-number">3</div>
-                    <h3 class="step-title">Grow Your Game</h3>
-                    <p class="step-description">More visibility. More wishlists. More players. You focus on development — we'll handle the buzz.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Why Choose Us -->
-    <section class="why-choose-us" id="why-choose-us">
-        <div class="container">
-            <h2 class="section-title">Why Choose Us</h2>
-            <p class="section-subtitle">Smart, flexible marketing for indie devs who'd rather build than hustle.</p>
-            <div class="features-grid-2x2">
-                <div class="feature-card">
-                    <h3 class="feature-title">Everything You Need, One Price</h3>
-                    <p class="feature-description">One flat fee — all-inclusive. No upfront costs. No long-term contracts. Just predictable, transparent pricing for complete Steam marketing support.</p>
-                </div>
-                <div class="feature-card">
-                    <h3 class="feature-title">Pause Anytime</h3>
-                    <p class="feature-description">Need to slow down or take a break? Pause or restart your plan anytime — no strings attached.</p>
-                </div>
-                <div class="feature-card">
-                    <h3 class="feature-title">Built by Game Devs, for Game Devs</h3>
-                    <p class="feature-description">Our team brings 10+ years of game industry experience — not just marketers, but actual devs who've shipped first-party titles. We get you.</p>
-                </div>
-                <div class="feature-card">
-                    <h3 class="feature-title">Your Marketing HQ</h3>
-                    <p class="feature-description">You get a dedicated Notion page — your own command center for milestones, campaign tracking, and collaborating with our team.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials -->
-    <section class="testimonials">
-        <div class="container">
-            <h2 class="section-title">What Our Partners Say</h2>
-            <div class="testimonial-grid">
-                <div class="testimonial-card">
-                    <p class="testimonial-text">“I was struggling with getting visibility outside Korea, and they helped us connect with creators and update our Steam page. As a result, we saw a big jump in wishlists during a major festival.”</p>
-                    <p class="testimonial-author">— Pocket Legend Dev Team</p>
-                </div>
-                <div class="testimonial-card">
-                    <p class="testimonial-text">“The team's expertise in Steam's ecosystem is unmatched. They helped us optimize our store page and run a successful festival campaign, leading to a 200% increase in daily wishlists.”</p>
-                    <p class="testimonial-author">— IndieGame Corp.</p>
+                    <h3 class="step-title" data-i18n="how.step3Title">Grow Your Game</h3>
+                    <p class="step-description" data-i18n="how.step3Desc">More visibility. More wishlists. More players. You focus on development — we'll handle the buzz.</p>
                 </div>
             </div>
         </div>
@@ -153,47 +137,144 @@
     <!-- What We Do -->
     <section class="what-we-do" id="what-we-do">
         <div class="container">
-            <h2 class="section-title">What We Do</h2>
-            <p class="section-subtitle">All-in-one Steam marketing, tailored for indie games.</p>
+            <h2 class="section-title" data-i18n="services.title">What We Do</h2>
+            <p class="section-subtitle" data-i18n="services.subtitle">Six core services that cover your game's entire marketing journey.</p>
             <div class="services-grid">
                 <div class="service-card">
-                    <div class="service-icon">🎯</div>
-                    <h3 class="service-title">Target Audience Research</h3>
-                    <p class="service-description">Define your ideal players and where to reach them, based on your game and genre references.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">🛠️</div>
-                    <h3 class="service-title">Steam Page Optimization</h3>
-                    <p class="service-description">Craft compelling descriptions, select the right tags, and boost your discoverability on Steam.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">📅</div>
-                    <h3 class="service-title">Apply & Participate Online Festivals</h3>
-                    <p class="service-description">Apply to Steam and third-party events that fit your game — and make the most of them.</p>
-                </div>
-                <div class="service-card">
                     <div class="service-icon">📱</div>
-                    <h3 class="service-title">Social & Community Management</h3>
-                    <p class="service-description">Build presence on TikTok, Discord, Reddit, and more — where your audience actually hangs out.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">🎥</div>
-                    <h3 class="service-title">Content Creator Outreach</h3>
-                    <p class="service-description">Connect with YouTubers and streamers who genuinely care about your genre.</p>
+                    <h3 class="service-title" data-i18n="services.s1Title">Social Media Management</h3>
+                    <p class="service-description" data-i18n="services.s1Desc">X, Reddit, TikTok, and YouTube — we build and run your channels and community, driving an average +536% follower growth.</p>
                 </div>
                 <div class="service-card">
                     <div class="service-icon">📰</div>
-                    <h3 class="service-title">Press Release Support</h3>
-                    <p class="service-description">Write and send tailored press releases to relevant outlets for real visibility.</p>
+                    <h3 class="service-title" data-i18n="services.s2Title">Press Release & PR</h3>
+                    <p class="service-description" data-i18n="services.s2Desc">We distribute to 60+ outlets across 11 countries and 7 languages — including Rock Paper Shotgun, Famitsu, 4Gamer, and Gematsu. Averaging 20+ pickups per title.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📅</div>
+                    <h3 class="service-title" data-i18n="services.s3Title">Online Event Support</h3>
+                    <p class="service-description" data-i18n="services.s3Desc">Steam Next Fest, Steam Sales, and third-party events — we apply, prepare, and maximize every opportunity.</p>
                 </div>
                 <div class="service-card">
                     <div class="service-icon">💰</div>
-                    <h3 class="service-title">Paid Ad Management (Optional)</h3>
-                    <p class="service-description">Run and optimize smart, budget-conscious ads — only when it makes sense.</p>
+                    <h3 class="service-title" data-i18n="services.s4Title">Paid Social Ads</h3>
+                    <p class="service-description" data-i18n="services.s4Desc">Reddit, TikTok, and YouTube campaigns, optimized with Steam Analytics for real, measurable wishlist conversion.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🛠️</div>
+                    <h3 class="service-title" data-i18n="services.s5Title">Steam Page Optimization</h3>
+                    <p class="service-description" data-i18n="services.s5Desc">Better descriptions, smarter tags, and higher Steam discoverability — plus hands-on feedback on your capsule image and trailer.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🎥</div>
+                    <h3 class="service-title" data-i18n="services.s6Title">Content Creator Outreach</h3>
+                    <p class="service-description" data-i18n="services.s6Desc">We pitch your game to YouTubers and streamers who already love your genre — real fans, real coverage.</p>
                 </div>
             </div>
             <div class="cta-section">
-                <button class="btn btn--primary btn--lg">Tour the Game HQ</button>
+                <a href="https://calendly.com/h-kwon/steam-marketing-pro" class="btn btn--primary btn--lg" role="button" data-i18n="services.cta">Book a Call</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results -->
+    <section class="results" id="results">
+        <div class="container">
+            <h2 class="section-title" data-i18n="results.title">Real Results</h2>
+            <p class="section-subtitle" data-i18n="results.subtitle">How our strategies turned into measurable growth for indie titles.</p>
+            <div class="results-grid">
+                <div class="result-card">
+                    <div class="result-badge" data-i18n="results.case1Badge">Case 1 · Community Strategy</div>
+                    <h3 class="result-name" data-i18n="results.case1Title">From Wasted Ads to a Thriving Community</h3>
+                    <div class="result-block">
+                        <span class="result-block-label" data-i18n="results.before">Before</span>
+                        <p data-i18n="results.case1Before">Budget going to ads that built no community. Tags were too generic to reach the right players.</p>
+                    </div>
+                    <div class="result-block">
+                        <span class="result-block-label" data-i18n="results.strategy">Strategy</span>
+                        <p data-i18n="results.case1Strategy">Precision targeting, a Reddit-centered community, and Japanese influencer outreach.</p>
+                    </div>
+                    <div class="result-block">
+                        <span class="result-block-label" data-i18n="results.after">After</span>
+                        <div class="result-metrics">
+                            <div class="result-metric">
+                                <span class="result-metric-value">x7</span>
+                                <span class="result-metric-label" data-i18n="results.case1M1">Steam Impressions</span>
+                            </div>
+                            <div class="result-metric">
+                                <span class="result-metric-value">x6</span>
+                                <span class="result-metric-label" data-i18n="results.case1M2">Page Visits</span>
+                            </div>
+                            <div class="result-metric">
+                                <span class="result-metric-value">▲677<small>/mo</small></span>
+                                <span class="result-metric-label" data-i18n="results.case1M3">Wishlists</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="result-card">
+                    <div class="result-badge" data-i18n="results.case2Badge">Case 2 · Ad Channel Optimization</div>
+                    <h3 class="result-name" data-i18n="results.case2Title">Squeezing Maximum Reach From Every Dollar</h3>
+                    <div class="result-block">
+                        <span class="result-block-label" data-i18n="results.before">Before</span>
+                        <p data-i18n="results.case2Before">Google burned budget with the weakest traffic efficiency. TikTok was cheap but barely converted. Reddit delivered the best targeting at a reasonable cost.</p>
+                    </div>
+                    <div class="result-block">
+                        <span class="result-block-label" data-i18n="results.strategy">Strategy</span>
+                        <p data-i18n="results.case2Strategy">Reallocated budget to the highest-performing channels — 75% Reddit, 25% TikTok — based on live cost data.</p>
+                    </div>
+                    <div class="result-block">
+                        <span class="result-block-label" data-i18n="results.results">Results</span>
+                        <div class="result-metrics">
+                            <div class="result-metric">
+                                <span class="result-metric-value">₩17</span>
+                                <span class="result-metric-label" data-i18n="results.case2M1">TikTok CPC</span>
+                            </div>
+                            <div class="result-metric">
+                                <span class="result-metric-value">$0.12</span>
+                                <span class="result-metric-label" data-i18n="results.case2M2">Reddit CPC</span>
+                            </div>
+                            <div class="result-metric">
+                                <span class="result-metric-value">₩19</span>
+                                <span class="result-metric-label" data-i18n="results.case2M3">Google CPV</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-choose-us" id="why-choose-us">
+        <div class="container">
+            <h2 class="section-title" data-i18n="why.title">Why Choose Us</h2>
+            <p class="section-subtitle" data-i18n="why.subtitle">Smart, flexible marketing for indie devs who'd rather build than hustle.</p>
+            <div class="features-grid-3">
+                <div class="feature-card">
+                    <h3 class="feature-title" data-i18n="why.f1Title">Gamer & Developer Marketers</h3>
+                    <p class="feature-description" data-i18n="why.f1Desc">We're not just marketers — we're gamers and devs who've shipped our own titles. We speak your language.</p>
+                </div>
+                <div class="feature-card">
+                    <h3 class="feature-title" data-i18n="why.f2Title">Global Network</h3>
+                    <p class="feature-description" data-i18n="why.f2Desc">15+ countries of media, influencer, and community reach — your game goes worldwide from day one.</p>
+                </div>
+                <div class="feature-card">
+                    <h3 class="feature-title" data-i18n="why.f3Title">Data-Driven Strategy</h3>
+                    <p class="feature-description" data-i18n="why.f3Desc">Every decision is backed by Steam Analytics and live campaign data — no guesswork, just results.</p>
+                </div>
+                <div class="feature-card">
+                    <h3 class="feature-title" data-i18n="why.f4Title">Fast Execution</h3>
+                    <p class="feature-description" data-i18n="why.f4Desc">Onboarding in 3–5 business days. We move at the speed your launch window demands.</p>
+                </div>
+                <div class="feature-card">
+                    <h3 class="feature-title" data-i18n="why.f5Title">Transparent Partnership</h3>
+                    <p class="feature-description" data-i18n="why.f5Desc">One flat fee, a shared Notion HQ, and weekly updates. You always know exactly what we're doing.</p>
+                </div>
+                <div class="feature-card">
+                    <h3 class="feature-title" data-i18n="why.f6Title">Indie-Specialized Experience</h3>
+                    <p class="feature-description" data-i18n="why.f6Desc">Five years and 20+ titles focused entirely on indie Steam games — we know what works and what doesn't.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -201,145 +282,166 @@
     <!-- Pricing -->
     <section class="pricing" id="pricing">
         <div class="container">
-            <h2 class="section-title">Plans</h2>
+            <h2 class="section-title" data-i18n="pricing.title">Plans</h2>
             <div class="pricing-grid">
                 <div class="pricing-card">
                     <div class="pricing-header">
-                        <h3 class="pricing-title">Starter</h3>
-                        <div class="pricing-price">$1,800<span>/mo</span></div>
-                        <p class="pricing-description">Your first step on the marketing quest</p>
+                        <h3 class="pricing-title" data-i18n="pricing.plan1Name">Starter</h3>
+                        <div class="pricing-price" data-i18n="pricing.plan1Price">$1,800/mo</div>
+                        <p class="pricing-description" data-i18n="pricing.plan1Desc">Core visibility — without the agency overhead.</p>
                     </div>
-                    <button class="btn btn--primary btn--full">Get Started</button>
                     <ul class="pricing-features">
-                        <li>✔️ Target audience research</li>
-                        <li>✔️ Steam page optimization</li>
-                        <li>✔️ Online festival applications & participation</li>
-                        <li>✔️ Content creator outreach</li>
-                        <li>✔️ Press release</li>
-                        <li>✔️ Twitter & Reddit post management</li>
+                        <li data-i18n="pricing.plan1F1">✔️ Online festival applications & participation</li>
+                        <li data-i18n="pricing.plan1F2">✔️ Press release (1x per month)</li>
+                        <li data-i18n="pricing.plan1F3">✔️ Twitter & Reddit post management</li>
+                        <li data-i18n="pricing.plan1F4">✔️ Audience & competitor research</li>
+                        <li data-i18n="pricing.plan1F5">✔️ Dedicated Notion workspace</li>
+                        <li data-i18n="pricing.plan1F6">✔️ Monthly performance report</li>
                     </ul>
                 </div>
                 <div class="pricing-card pricing-card--featured">
-                    <div class="pricing-badge">Most Popular</div>
+                    <div class="pricing-badge" data-i18n="pricing.popular">Most Popular</div>
                     <div class="pricing-header">
-                        <h3 class="pricing-title">Pro</h3>
-                        <div class="pricing-price">$3,000<span>/mo</span></div>
-                        <p class="pricing-description">Starter gets you going. Pro brings full-channel growth.</p>
+                        <h3 class="pricing-title" data-i18n="pricing.plan2Name">Momentum</h3>
+                        <div class="pricing-price" data-i18n="pricing.plan2Price">$3,500/mo</div>
+                        <p class="pricing-description" data-i18n="pricing.plan2Desc">Full-channel reach — built for your launch push.</p>
                     </div>
-                    <button class="btn btn--primary btn--full">Get Started</button>
                     <ul class="pricing-features">
-                        <li>✔️ Everything in Starter, plus:</li>
-                        <li>✔️ TikTok content strategy & posting</li>
-                        <li>✔️ YouTube shorts & clips</li>
-                        <li>✔️ Discord setup & community management</li>
-                        <li>✔️ Paid ad campaign setup, management, and optimization</li>
+                        <li data-i18n="pricing.plan2F1">✔️ Everything in Starter, plus:</li>
+                        <li data-i18n="pricing.plan2F2">✔️ TikTok content strategy & posting</li>
+                        <li data-i18n="pricing.plan2F3">✔️ YouTube shorts & clips</li>
+                        <li data-i18n="pricing.plan2F4">✔️ Content creator outreach</li>
+                        <li data-i18n="pricing.plan2F5">✔️ Discord server setup & community management</li>
+                        <li data-i18n="pricing.plan2F6">✔️ Online event support (Next Fest, sales, etc.)</li>
                     </ul>
                 </div>
                 <div class="pricing-card">
                     <div class="pricing-header">
-                        <h3 class="pricing-title">Revenue Share</h3>
-                        <div class="pricing-price">Custom</div>
-                        <p class="pricing-description">Prefer a revenue share model instead of a monthly fee? We're open to that too. Let's chat and see if it's a good fit - just reach out!</p>
+                        <h3 class="pricing-title" data-i18n="pricing.plan3Name">Scale</h3>
+                        <div class="pricing-price" data-i18n="pricing.plan3Price">$5,500/mo</div>
+                        <p class="pricing-description" data-i18n="pricing.plan3Desc">Paid ads, page optimization, and priority access — fully managed.</p>
                     </div>
-                    <button class="btn btn--outline btn--full">Submit Your Game</button>
+                    <ul class="pricing-features">
+                        <li data-i18n="pricing.plan3F1">✔️ Everything in Momentum, plus:</li>
+                        <li data-i18n="pricing.plan3F2">✔️ Paid ad campaign setup & optimization</li>
+                        <li data-i18n="pricing.plan3F3">✔️ Steam page optimization</li>
+                        <li data-i18n="pricing.plan3F4">✔️ Capsule image & trailer feedback</li>
+                        <li data-i18n="pricing.plan3F5">✔️ Priority response & consultation</li>
+                        <li data-i18n="pricing.plan3F6">✔️ Dedicated manager & direct line</li>
+                    </ul>
                 </div>
             </div>
+            <p class="pricing-note" data-i18n="pricing.note">Ad spend for paid press and paid ads is billed separately. Prices exclude VAT.</p>
+        </div>
+    </section>
+
+    <!-- Process -->
+    <section class="process" id="process">
+        <div class="container">
+            <h2 class="section-title" data-i18n="process.title">Our Process</h2>
+            <p class="section-subtitle" data-i18n="process.subtitle">A clear, repeatable path from kickoff to results.</p>
+            <div class="process-timeline">
+                <div class="process-step">
+                    <div class="process-number">1</div>
+                    <h3 class="process-step-title" data-i18n="process.p1Title">Initial Consultation</h3>
+                    <p class="process-step-desc" data-i18n="process.p1Desc">We learn your game, goals, and audience.</p>
+                </div>
+                <div class="process-step">
+                    <div class="process-number">2</div>
+                    <h3 class="process-step-title" data-i18n="process.p2Title">Strategy Design</h3>
+                    <p class="process-step-desc" data-i18n="process.p2Desc">A tailored roadmap across channels and markets.</p>
+                </div>
+                <div class="process-step">
+                    <div class="process-number">3</div>
+                    <h3 class="process-step-title" data-i18n="process.p3Title">Asset Production</h3>
+                    <p class="process-step-desc" data-i18n="process.p3Desc">Content, copy, and creatives built to convert.</p>
+                </div>
+                <div class="process-step">
+                    <div class="process-number">4</div>
+                    <h3 class="process-step-title" data-i18n="process.p4Title">Campaign Launch</h3>
+                    <p class="process-step-desc" data-i18n="process.p4Desc">We go live across press, social, and ads.</p>
+                </div>
+                <div class="process-step">
+                    <div class="process-number">5</div>
+                    <h3 class="process-step-title" data-i18n="process.p5Title">Monitoring</h3>
+                    <p class="process-step-desc" data-i18n="process.p5Desc">Live optimization based on real performance data.</p>
+                </div>
+                <div class="process-step">
+                    <div class="process-number">6</div>
+                    <h3 class="process-step-title" data-i18n="process.p6Title">Reporting</h3>
+                    <p class="process-step-desc" data-i18n="process.p6Desc">Monthly reports plus weekly updates, always transparent.</p>
+                </div>
+            </div>
+            <p class="process-note" data-i18n="process.note">Average onboarding: 3–5 business days · Monthly reports + weekly updates · A dedicated 1:1 manager</p>
         </div>
     </section>
 
     <!-- FAQ -->
     <section class="faq">
         <div class="container">
-            <h2 class="section-title">FAQ</h2>
+            <h2 class="section-title" data-i18n="faq.title">FAQ</h2>
             <div class="faq-list">
                 <div class="faq-item">
                     <div class="faq-question">
-                        <span>Do I need to have a Steam page already?</span>
+                        <span data-i18n="faq.q1">Do I need to have a Steam page already?</span>
                         <div class="faq-icon">+</div>
                     </div>
                     <div class="faq-answer">
-                        <p>Yes, or at least be ready to launch one with us during the first month.</p>
+                        <p data-i18n="faq.a1">Yes, or at least be ready to launch one with us during the first month.</p>
                     </div>
                 </div>
                 <div class="faq-item">
                     <div class="faq-question">
-                        <span>Do I need to share a demo of my game?</span>
+                        <span data-i18n="faq.q2">Do I need to share a demo of my game?</span>
                         <div class="faq-icon">+</div>
                     </div>
                     <div class="faq-answer">
-                        <p>Yes — to understand your game and create content effectively, we need access to a playable build.</p>
+                        <p data-i18n="faq.a2">Yes — to understand your game and create content effectively, we need access to a playable build.</p>
                     </div>
                 </div>
                 <div class="faq-item">
                     <div class="faq-question">
-                        <span>Is there a trial period?</span>
+                        <span data-i18n="faq.q3">Do you manage paid ads?</span>
                         <div class="faq-icon">+</div>
                     </div>
                     <div class="faq-answer">
-                        <p>Not officially, but if you’re not satisfied after the first month, we’ll offer a 50% refund — no hard feelings.</p>
+                        <p data-i18n="faq.a3">Yes. Once we align on campaign goals and budget, we handle setup, optimization, and management.</p>
                     </div>
                 </div>
                 <div class="faq-item">
                     <div class="faq-question">
-                        <span>Do you manage paid ads?</span>
+                        <span data-i18n="faq.q4">Do you create trailers?</span>
                         <div class="faq-icon">+</div>
                     </div>
                     <div class="faq-answer">
-                        <p>Yes. Once we align on campaign goals and budget, we handle setup, optimization, and management.</p>
+                        <p data-i18n="faq.a4">We don't produce trailers ourselves, but we're happy to give you feedback on yours. For cinematic trailers, we recommend working with a specialized studio.</p>
                     </div>
                 </div>
                 <div class="faq-item">
                     <div class="faq-question">
-                        <span>Do you create trailers?</span>
+                        <span data-i18n="faq.q5">Do you only work with Steam games? What about mobile?</span>
                         <div class="faq-icon">+</div>
                     </div>
                     <div class="faq-answer">
-                        <p>We create short-form videos for social media and Steam updates. For cinematic trailers, we recommend working with a specialized studio.</p>
+                        <p data-i18n="faq.a5">We specialize in PC/Steam games. At this time, we do not support mobile game marketing.</p>
                     </div>
                 </div>
                 <div class="faq-item">
                     <div class="faq-question">
-                        <span>Do you only work with Steam games? What about mobile?</span>
+                        <span data-i18n="faq.q6">How do I communicate and track progress?</span>
                         <div class="faq-icon">+</div>
                     </div>
                     <div class="faq-answer">
-                        <p>We specialize in PC/Steam games. At this time, we do not support mobile game marketing.</p>
+                        <p data-i18n="faq.a6">Once you sign up, you'll get access to a dedicated Notion page. There, you can share info, track tasks, view updates, and communicate directly with us — all in one place.</p>
                     </div>
                 </div>
                 <div class="faq-item">
                     <div class="faq-question">
-                        <span>Do you offer funding for revenue share projects?</span>
+                        <span data-i18n="faq.q7">Who's behind this service?</span>
                         <div class="faq-icon">+</div>
                     </div>
                     <div class="faq-answer">
-                        <p>Yes — we can invest up to $50,000 in select titles under our revenue share model. If you're interested, submit your game for review.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <span>What if I only have a few marketing needs right now?</span>
-                        <div class="faq-icon">+</div>
-                    </div>
-                    <div class="faq-answer">
-                        <p>No problem. You can sign up, make your requests, then pause or cancel your plan anytime. Come back when you're ready for more support — we're flexible.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <span>How do I communicate and track progress?</span>
-                        <div class="faq-icon">+</div>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Once you sign up, you’ll get access to a dedicated Notion page. There, you can share info, track tasks, view updates, and communicate directly with us — all in one place.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <span>Who’s behind this service?</span>
-                        <div class="faq-icon">+</div>
-                    </div>
-                    <div class="faq-answer">
-                        <p>We’re a two-person team — one from Korea and one from Russia — both fluent in English. As part of a 5-person dev team, we’ve built and launched our own turn-based strategy and action games, handling everything from development to marketing and publishing. With over 10 years in the game industry, we now help other indie devs do the same.</p>
+                        <p data-i18n="faq.a7">We're an English-speaking Korean and Russian two-person team. As part of a 5-person dev team, we've built and launched our own turn-based strategy and action games, handling everything from development to marketing and publishing. With over 10 years in the game industry, we now help other indie devs do the same.</p>
                     </div>
                 </div>
             </div>
@@ -352,16 +454,15 @@
             <div class="footer-content">
                 <div class="footer-brand">
                     <h3>HypePotions</h3>
-                    <p>Focus on development. We handle the marketing.</p>
+                    <p data-i18n="footer.tagline">Focus on development. We handle the marketing.</p>
                 </div>
                 <div class="footer-contact">
-                    <p>Ready to grow your game?</p>
-                    <!--<button class="btn btn--primary">Get Started Today</button>-->
-                    <a href="#pricing" class="btn btn--primary" role="button">Get Started Today</a>
+                    <p data-i18n="footer.ready">Ready to grow your game?</p>
+                    <a href="https://calendly.com/h-kwon/steam-marketing-pro" class="btn btn--primary" role="button" data-i18n="footer.getStarted">Schedule Your Free Strategy Session</a>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 Steam Marketing Pro. All rights reserved.</p>
+                <p>&copy; 2025 HypePotions by Sentience. All rights reserved.</p>
             </div>
         </div>
     </footer>
