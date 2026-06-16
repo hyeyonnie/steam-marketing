@@ -1,0 +1,14 @@
+# 설정 파일 (API 키·경로 포함)
+config.yaml
+
+# 출력 파일
+*.xlsx
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+*.egg-info/
+
+# 환경변수
+.env
