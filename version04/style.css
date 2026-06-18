@@ -997,6 +997,17 @@ section {
   line-height: 1.6;
 }
 
+.result-bullet-list {
+  margin: 0;
+  padding-left: var(--spacing-md);
+  color: var(--color-medium-dark);
+  line-height: 1.6;
+}
+
+.result-bullet-list li {
+  margin-bottom: var(--spacing-xs);
+}
+
 .result-metrics {
   display: flex;
   gap: var(--spacing-md);
