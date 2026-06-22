@@ -245,8 +245,8 @@ const i18n = {
         'results.case2M2': 'Reddit CPC',
         'results.case2M3': 'Google CPV',
 
-        'why.title': '왜 HypePotions인가',
-        'why.subtitle': '게임 개발에 집중하세요. 마케팅은 HypePotions가 함께합니다.',
+        'why.title': '왜 Sentience Steam Marketing인가',
+        'why.subtitle': '게임 개발에 집중하세요. 마케팅은 Sentience Steam Marketing이 함께합니다.',
         'why.f1Title': '게이머이자 개발자인 마케터',
         'why.f1Desc': '저희는 마케터이기 전에 게임 개발자입니다. 그래서 인디 개발자가 무엇을 고민하는지, 무엇이 필요한지 잘 알고 있습니다.',
         'why.f2Title': '글로벌 네트워크',
